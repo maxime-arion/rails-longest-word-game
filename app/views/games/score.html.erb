@@ -1,0 +1,9 @@
+<!-- app/views/games/score.html.erb -->
+
+<h1>Word Game</h1>
+
+<p>Your word: <%= @word %></p>
+<p>Result: <%= @result[:message] %></p>
+<p>Your current score: <%= session[:score] %></p>
+
+<%= link_to "Play Again", new_path %>
